@@ -49,11 +49,11 @@ echo "Program,Version,Date,Size,Description" > installed_programs_detailed_fast.
 pacman -Qei | while read LINE; do
     # If line is empty analyze the collected multiline string
     if [[ -z $LINE ]]; then
-        NAME=$(echo -e "$DATA" | grep 'Name' | cut -d':' -f2- | awk '{$1=$1};1')
-        VERSION=$(echo -e "$DATA" | grep 'Version' | cut -d':' -f2- | awk '{$1=$1};1')
-        SIZE=$(echo -e "$DATA" | grep 'Installed Size' | cut -d ':' -f2- | awk '{$1=$1};1')
-        DATE=$(echo -e "$DATA" | grep 'Install Date' | cut -d ':' -f2- | awk '{$1=$1};1')
-        DESCRIPTION=$(echo -e "$DATA" | grep 'Description' | cut -d ':' -f2- | awk '{$1=$1};1')
+        NAME=$(        echo -e "$DATA" | grep 'Name'           | cut -d':' -f2- | awk '{$1=$1};1' )
+        VERSION=$(     echo -e "$DATA" | grep 'Version'        | cut -d':' -f2- | awk '{$1=$1};1' )
+        SIZE=$(        echo -e "$DATA" | grep 'Installed Size' | cut -d':' -f2- | awk '{$1=$1};1' )
+        DATE=$(        echo -e "$DATA" | grep 'Install Date'   | cut -d':' -f2- | awk '{$1=$1};1' )
+        DESCRIPTION=$( echo -e "$DATA" | grep 'Description'    | cut -d':' -f2- | awk '{$1=$1};1' )
         echo "$NAME,$VERSION,$DATE,\"$SIZE\",\"$DESCRIPTION\"" >> installed_programs_detailed_fast.csv
         DATA=""
     else
