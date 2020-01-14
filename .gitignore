@@ -1,2 +1,5 @@
 # Ignore created csv files for now
 *.csv
+
+# Ignore hosts file
+hosts

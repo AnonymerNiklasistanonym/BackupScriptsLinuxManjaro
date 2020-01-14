@@ -1,36 +1,39 @@
-# Keep configuration files (Manjaro)
-+ ~/.config/
-
 # Keep Firefox bookmarks, where "xxxxxxxx" represents a random string of 8 characters.
 # http://support.mozilla.com/en-US/kb/Backing+up+your+information#Locate_your_profile_folder
-+ ~/.mozilla/firefox/
-+ ~/.mozilla/firefox/xxxxxxxx.default/
-+ ~/.mozilla/firefox/xxxxxxxx.default/bookmarkbackups/
-- ~/.mozilla/*
-- ~/.mozilla/firefox/*
-- ~/.mozilla/firefox/xxxxxxxx.default/*
+.mozilla/*
+.mozilla/firefox/*
+.mozilla/firefox/xxxxxxxx.default/*
 
-# Ignore hidden files per default
-- .*
+# Ignore hidden directories per default (!!!!!!!!)
+# Only in the topmost directory:
+/.*
+# All hidden files
+#.*/
 
 # Ignore temporary files per default
-- *.tmp
-- *.temp
+*.tmp
+*.temp
 
 # Ignore build directories files per default
-- build*
+build*
 
 # Ignore node packages per default
-- node_modules
+node_modules
+
+# Ignore android sdk and co per default
+Android
 
 # Ignore files and directories that are marked as such
-- delete*
+delete*
 
 # Ignore OneDrive files
-- OneDrive
+OneDrive
 
 # Ignore Downloads
-- Downloads
+Downloads
 
-# Ignore backup tests
-- backup_test*
+# Ignore default backup directory
+backup_home_directory
+
+.bash_history
+.bash_logout

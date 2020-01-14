@@ -1,6 +1,27 @@
 #!/usr/bin/env bash
 
 
+VERSION=0.0.1
+
+case "$1" in
+  --help)
+      echo "$(basename "$0")"
+      echo ""
+      echo "Export information about with pacman/trizen installed programs to CSV files."
+      echo ""
+      echo "Options:"
+      echo "    --help     Get usage info"
+      echo "    --version  Get version info"
+      exit 0
+      ;;
+  --version) # Version info
+      echo "$VERSION"
+      exit 0
+      ;;
+  *) # Other argument
+      ;;
+esac
+
 
 echo -n "Get list of all manually installed packages of Pacman and their version..."
 
