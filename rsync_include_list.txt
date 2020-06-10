@@ -1,5 +1,0 @@
-# Keep Firefox bookmarks, where "xxxxxxxx" represents a random string of 8 characters.
-# http://support.mozilla.com/en-US/kb/Backing+up+your+information#Locate_your_profile_folder
-.mozilla/firefox/
-.mozilla/firefox/xxxxxxxx.default/
-.mozilla/firefox/xxxxxxxx.default/bookmarkbackups/
