@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-cp /etc/hosts ./hosts
-
+cp /etc/hosts* ./
