@@ -44,6 +44,9 @@ delete*
 # Ignore OneDrive files
 OneDrive
 
+# Ignore Google Drive files
+GoogleDrive
+
 # Ignore Downloads
 Downloads
 
