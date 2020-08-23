@@ -15,6 +15,10 @@ Scripts with which you can easily backup data on Linux PCs (Manjaro 18.1 in this
 | ------------ | ------------- |
 | Show Desktop | `Super` + `D` |
 
+`Window Manager Tweaks` > `Accessibility`
+
+- [ ] Raise windows when any mouse button is pressed (per default this is checked)
+
 ### General
 
 `Keyboard` > `Application Shortcuts`
