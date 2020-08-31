@@ -16,6 +16,7 @@
 tmp
 temp
 *.cache
+*/venv*
 cache
 caches
 Cache
@@ -37,6 +38,9 @@ node_modules
 .android
 .AndroidStudioPreview4.1
 Android
+
+# Ignore go files
+go
 
 # Ignore files and directories that are marked as such
 delete*
@@ -81,10 +85,11 @@ backup_home_directory
 .config/configstore
 .config/dconf
 .config/deepin
+.config/Dharkael
 .config/Electron
 .config/enchant
 .config/falkon
-.config/filezilla
+.config/fontforge
 .config/FreeCAD
 .config/galculator
 .config/gconf
@@ -114,17 +119,17 @@ backup_home_directory
 .config/little-shutdown-program
 .config/lsp-plugins
 .config/lutris
-.config/manjaro
 .config/manjaro-hello.json
 .config/matplotlib
 .config/menus
 .config/mimeapps.list
 .config/Mousepad
+.config/mono.addins
 .config/mpv
 .config/MuseScore
 .config/musikcube
 .config/Notepadqq
-.config/obs-studio
+.config/octopi
 .config/okular.kmessagebox
 .config/okularpartrc
 .config/okularrc
@@ -171,11 +176,14 @@ backup_home_directory
 .config/volumeicon
 .config/voxie
 .config/vscode-color-ui
+.config/xbuild
 .config/xfce4
 .config/yelp
 .config/zathura
-.cups
-.dia
+.config/zettlr
+.config/kconf_updaterc
+.config/kritadisplayrc
+.config/LANSConfig.conf
 .docker
 .dotnet
 .dvdcss
@@ -187,6 +195,7 @@ backup_home_directory
 .gnupg
 .gradle
 .hplip
+.icons
 .idlerc
 .ipython
 .jak
@@ -194,7 +203,9 @@ backup_home_directory
 .jupyter
 .m2
 .macromedia
-.marktex
+.MakeMKV
+.mc
+.mplayer
 .mono
 .mozilla
 .mume
@@ -221,8 +232,10 @@ backup_home_directory
 .tooling
 .Unrailed
 .vim
+.visidata
 .vnc
 .wallaby
+.wine
 .yarn
 snap
 # < Files >
@@ -270,3 +283,5 @@ snap
 
 # Local programs
 Programs/anki
+
+Videos
