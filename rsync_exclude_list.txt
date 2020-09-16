@@ -74,6 +74,7 @@ backup_home_directory
 .config/Android Open Source Project
 .config/audacious
 .config/autostart
+.config/balena-etcher-electron
 .config/blender
 .config/catfish
 .config/cef_user_data
@@ -130,6 +131,8 @@ backup_home_directory
 .config/MuseScore
 .config/musikcube
 .config/Notepadqq
+.config/obs-studio/logs
+.config/obs-studio/profiler_data
 .config/octopi
 .config/okular.kmessagebox
 .config/okularpartrc
