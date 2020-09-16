@@ -86,6 +86,7 @@ backup_home_directory
 .config/dconf
 .config/deepin
 .config/Dharkael
+.config/discord
 .config/Electron
 .config/enchant
 .config/falkon
@@ -283,5 +284,6 @@ snap
 
 # Local programs
 Programs/anki
+Programs/Natron-2.3.15-1
 
-Videos
+Videos/Movies
