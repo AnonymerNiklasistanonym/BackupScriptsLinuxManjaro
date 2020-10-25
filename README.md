@@ -33,6 +33,57 @@ Scripts with which you can easily backup data on Linux PCs (Manjaro 18.1 in this
 | Display settings | `xfce4-display-settings` | `Super` + `P` |
 | Lock screen | `xflock4` | `Super` + `L` |
 
+## Performance
+
+### CPU
+
+Set CPU scaling governor to performance instead of the default powersave:
+
+```sh
+$ cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+powersave
+powersave
+powersave
+powersave
+$ sudo sh -c "echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor"
+$ sudo sh -c "echo performance > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor"
+$ sudo sh -c "echo performance > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor"
+$ sudo sh -c "echo performance > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor"
+$ cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
+$ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 
+3600000
+$ cpupower frequency-info
+analyzing CPU 0:
+  driver: intel_pstate
+  CPUs which run at the same hardware frequency: 0
+  CPUs which need to have their frequency coordinated by software: 0
+  maximum transition latency:  Cannot determine or is not supported.
+  hardware limits: 800 MHz - 3.60 GHz
+  available cpufreq governors: performance powersave
+  current policy: frequency should be within 800 MHz and 3.60 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency: Unable to call hardware
+  current CPU frequency: 3.36 GHz (asserted by call to kernel)
+  boost state support:
+    Supported: yes
+    Active: yes
+```
+
+### GPU
+
+```sh
+$ sudo nvidia-settings
+```
+
+`X-Server Display Configuration` > `Advanced` > Enable `Force Full Composition Pipeline`
+
+
+
 ## Debug boot problems (`[Failed] Message...`)
 
 To see what went wrong run the command:
