@@ -113,3 +113,12 @@ sudo journalctl -u systemd-modules-load.service
 # Feb 13 15:36:31 niklas-pc systemd-modules-load[288]: Inserted module 'nvidia_drm'
 # Feb 13 15:36:31 niklas-pc systemd-modules-load[288]: Inserted module 'uinput'
 ```
+
+## Printing
+
+If `cups` is not running (which has happened in the past numerous times) run the following commands:
+
+```sh
+sudo systemctl enable cups.service
+sudo systemctl start cups.service
+```
