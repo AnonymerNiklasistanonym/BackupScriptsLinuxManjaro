@@ -33,6 +33,14 @@ Scripts with which you can easily backup data on Linux PCs (Manjaro 18.1 in this
 | Display settings | `xfce4-display-settings` | `Super` + `P` |
 | Lock screen | `xflock4` | `Super` + `L` |
 
+### Fixes
+
+If the (bottom) panel stops working like not showing the overlay on `WINDOWS` key or not audo hiding any more) run:
+
+```sh
+xfce4-panel -r
+```
+
 ## Performance
 
 ### CPU
