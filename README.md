@@ -130,3 +130,11 @@ If `cups` is not running (which has happened in the past numerous times) run the
 sudo systemctl enable cups.service
 sudo systemctl start cups.service
 ```
+
+## XFCE Problems
+
+If for example the cursor doesn't click anything any more or something else seems to be bugged about XFCE but the console is still accessible try:
+
+```sh
+xfwm4 --replace
+```
