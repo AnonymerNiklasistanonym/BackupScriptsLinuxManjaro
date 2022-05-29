@@ -11,9 +11,20 @@ Scripts with which you can easily backup data on Linux PCs (Manjaro 18.1 in this
 
 `Window Manager` > `Keyboard`
 
-| Description  | Shortcut      |
-| ------------ | ------------- |
-| Show Desktop | `Super` + `D` |
+| Description                     | Shortcut                    |
+| ------------------------------- | -------------------------- |
+| Show Desktop                    | `Super` + `D`              |
+| Tile window to the top          | `Super` + `Up`             |
+| Tile window to the bottom       | `Super` + `Down`           |
+| Tile window to the left         | `Super` + `Left`           |
+| Tile window to the right        | `Super` + `Right`          |
+| Tile window to the top-left     | `Super` + `Home (keypad)`  |
+| Tile window to the top-right    | `Super` + `Up (keypad)`    |
+| Tile window to the bottom-left  | `Super` + `End (keypad)`   |
+| Tile window to the bottom-right | `Super` + `Next (keypad)`  |
+| Fill window                     | `Super` + `Begin (keypad)` |
+| Fill window horizontally        | `Super` + `Down (keypad)`  |
+| Fill window vertically          | `Super` + `Right (keypad)` |
 
 `Window Manager Tweaks` > `Accessibility`
 
@@ -62,7 +73,7 @@ performance
 performance
 performance
 performance
-$ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 
+$ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 3600000
 $ cpupower frequency-info
 analyzing CPU 0:
